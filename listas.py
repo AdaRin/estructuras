@@ -72,7 +72,38 @@ i=0
 while i<len(frutas):
     print(frutas[i])
     i += 1
-"""
-    #SHORTHAND
+
+    #SHORTHAND (abreviación del ciclo for)
 frutas = ["Manzana", "Plátano", "Mandarina","Fresa", "Piña"]
 [print(fruta) for fruta in frutas]
+"""
+
+frutas = ["Manzana", "Plátano", "Mandarina","Fresa", "Piña", "Melón", "Pera"]
+
+                #dato a
+                # asignar   bucle           condición
+frutas_con_e = [fruta for fruta in frutas if "e" in fruta ]
+print(frutas_con_e)
+
+frutas2= [fruta for fruta in frutas if fruta !="Mandarina" ]
+print(frutas2)
+
+#Hacer una copia
+copia= [fruta for fruta in frutas]
+print(copia)
+
+#Hacer una copia
+rango= [x for x in range(10) if x<5]
+print(rango)
+
+#Poner todo en mayusculas
+mayus= [fruta.upper() for fruta in frutas ]
+print(mayus)
+
+#Poner todo en mayusculas
+min= [fruta.lower() for fruta in frutas ]
+print(min)
+
+#Poner todo en mayusculas
+frutas3= [fruta if fruta != "Pera" else "Aguacate" for fruta in frutas ]
+print(frutas3)
