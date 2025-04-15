@@ -65,10 +65,14 @@ frutas = ["Manzana", "Plátano", "Mandarina","Fresa", "Piña"]
 
 for i in range(len(frutas)):
     print(frutas[i])
-    """
+    
 #BUCLE WHILE
 frutas = ["Manzana", "Plátano", "Mandarina","Fresa", "Piña"]
 i=0
 while i<len(frutas):
     print(frutas[i])
     i += 1
+"""
+    #SHORTHAND
+frutas = ["Manzana", "Plátano", "Mandarina","Fresa", "Piña"]
+[print(fruta) for fruta in frutas]
