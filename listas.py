@@ -78,7 +78,10 @@ frutas = ["Manzana", "Plátano", "Mandarina","Fresa", "Piña"]
 [print(fruta) for fruta in frutas]
 """
 
-frutas = ["Manzana", "Plátano", "Mandarina","Fresa", "Piña", "Melón", "Pera"]
+import copy
+
+
+frutas = ["Manzana", "plátano", "Mandarina","Fresa", "Piña", "melón", "Pera"]
 
                 #dato a
                 # asignar   bucle           condición
@@ -104,6 +107,39 @@ print(mayus)
 min= [fruta.lower() for fruta in frutas ]
 print(min)
 
-#Poner todo en mayusculas
+#Poner todo en minusculas
 frutas3= [fruta if fruta != "Pera" else "Aguacate" for fruta in frutas ]
 print(frutas3)
+
+#Ordenando listas
+numeros = [9,999,820,0,3,1]
+
+
+frutas.sort(key = str.lower)
+numeros.sort()
+
+print(frutas)
+print(numeros)
+
+#Ordenando al reves
+frutas.reverse()
+print(frutas)
+
+
+#COPIAS DE LISTAS
+
+copia_frutas = frutas.copy()
+copia_frutas2 = list(frutas)
+
+print(copia_frutas)
+print(copia_frutas2)
+
+#JUNTAR LISTAS
+
+frutasj = frutas + numeros
+print(frutasj)
+
+frutas.extend(numeros)
+print(frutas)
+
+print(frutas.count("Manzana"))
