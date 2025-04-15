@@ -2,10 +2,11 @@
 #LISTAS
 #----------------------------------
 
-lista = ["Manzana", "Plátano", "Mandarina","Fresa", "Piña"]
+
 
 
 """"
+lista = ["Manzana", "Plátano", "Mandarina","Fresa", "Piña"]
 print(lista[-2])
 if "Sandia" in lista:
     print("Si, Sandia está en la lista")
@@ -39,7 +40,7 @@ print(lista)
 #Eliminando índice
 lista.pop(2)
 print(lista)
-"""
+
 print(lista)
 #Usando  pop sin argumento el cual elimina el último elemento
 lista.pop()
@@ -48,3 +49,26 @@ print(lista)
 #Limpiar lista (vacia)
 lista.clear()
 print(lista)
+
+
+
+#BUCLE FOR
+
+frutas = ["Manzana", "Plátano", "Mandarina","Fresa", "Piña"]
+
+for fruta in frutas:
+    print(fruta)
+
+
+#BUCLE FOR CON ÍNDICE DISPONIBLE
+frutas = ["Manzana", "Plátano", "Mandarina","Fresa", "Piña"]
+
+for i in range(len(frutas)):
+    print(frutas[i])
+    """
+#BUCLE WHILE
+frutas = ["Manzana", "Plátano", "Mandarina","Fresa", "Piña"]
+i=0
+while i<len(frutas):
+    print(frutas[i])
+    i += 1
