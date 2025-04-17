@@ -7,11 +7,16 @@
 
 
 """
+frutas = ("Manzana", "Plátano", "Cereza", "Manzana")
+
 numeros = (1,2,4)
 print(len(frutas))
 
 
 # ACTUALIZACIÓN DE UNA TUPLA
+
+frutas = ("Manzana", "Plátano", "Cereza", "Manzana")
+
 frutas2 = list(frutas) #lista
 
 frutas2[1] = "Coco"  #modifico la lista
@@ -31,10 +36,24 @@ tuplas_frutas = tuple(listas_frutas)
 
 print(tuplas_frutas)
 
-"""
+
+#CONCATENANDO TUPLAS
 tupla_verduleria = ("Manzana", "Plátano", "Cereza", "Manzana")
 tuplas_verduras = ("Zanahoria", "Ajo", "Brocoli")
 
 tupla_verduleria += tuplas_verduras
 
 print(tupla_verduleria)
+"""
+
+#REMOVIENDO ELEMENTO EN TUPLA
+
+tupla_frutas = ("Manzana", "Plátano", "Cereza", "Manzana")
+
+lista_frutas = list(tupla_frutas)
+
+lista_frutas.remove("Manzana")
+
+tupla_frutas = tuple(lista_frutas)
+
+print(tupla_frutas)
