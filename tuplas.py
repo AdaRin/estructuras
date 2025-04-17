@@ -19,9 +19,9 @@ frutas2[1] = "Coco"  #modifico la lista
 frutas = tuple(frutas2)  #convierto a tupla la lista y la resigno a la variable original
  
 print(frutas)
-"""
 
-tuplas_frutas = ("Manzana", "Plátano", "Cereza", "Manzana")
+
+
 
 listas_frutas = list(tuplas_frutas)
 
@@ -31,4 +31,10 @@ tuplas_frutas = tuple(listas_frutas)
 
 print(tuplas_frutas)
 
+"""
+tupla_verduleria = ("Manzana", "Plátano", "Cereza", "Manzana")
+tuplas_verduras = ("Zanahoria", "Ajo", "Brocoli")
 
+tupla_verduleria += tuplas_verduras
+
+print(tupla_verduleria)
