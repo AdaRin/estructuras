@@ -5,7 +5,8 @@
 
 
 
-frutas = ("Manzana", "Plátano", "Cereza", "Manzana")
+
+"""
 numeros = (1,2,4)
 print(len(frutas))
 
@@ -18,3 +19,16 @@ frutas2[1] = "Coco"  #modifico la lista
 frutas = tuple(frutas2)  #convierto a tupla la lista y la resigno a la variable original
  
 print(frutas)
+"""
+
+tuplas_frutas = ("Manzana", "Plátano", "Cereza", "Manzana")
+
+listas_frutas = list(tuplas_frutas)
+
+listas_frutas.append("Coco")
+
+tuplas_frutas = tuple(listas_frutas)
+
+print(tuplas_frutas)
+
+
