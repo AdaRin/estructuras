@@ -11,10 +11,10 @@ frutas = ("Manzana", "Plátano", "Cereza", "Manzana")
 
 numeros = (1,2,4)
 print(len(frutas))
-
+"""
 
 # ACTUALIZACIÓN DE UNA TUPLA
-
+"""
 frutas = ("Manzana", "Plátano", "Cereza", "Manzana")
 
 frutas2 = list(frutas) #lista
@@ -35,9 +35,10 @@ listas_frutas.append("Coco")
 tuplas_frutas = tuple(listas_frutas)
 
 print(tuplas_frutas)
-
+"""
 
 #CONCATENANDO TUPLAS
+"""
 tupla_verduleria = ("Manzana", "Plátano", "Cereza", "Manzana")
 tuplas_verduras = ("Zanahoria", "Ajo", "Brocoli")
 
@@ -47,7 +48,7 @@ print(tupla_verduleria)
 """
 
 #REMOVIENDO ELEMENTO EN TUPLA
-
+"""
 tupla_frutas = ("Manzana", "Plátano", "Cereza", "Manzana")
 
 lista_frutas = list(tupla_frutas)
@@ -57,3 +58,30 @@ lista_frutas.remove("Manzana")
 tupla_frutas = tuple(lista_frutas)
 
 print(tupla_frutas)
+"""
+#REMOVIENDO ELEMENTO EN TUPLA
+"""
+tupla_frutas = ("Manzana", "Plátano", "Cereza", "Manzana")
+
+del tupla_frutas
+"""
+
+#DESEMPAQUETANDO TUPLAS
+
+tupla_frutas = ("Manzana", "Plátano", "Cereza", "Manzana","Banana")
+(a, b, c, d, e) = tupla_frutas
+
+print(a)
+print(b)
+print(c)
+print(d)
+print(e)
+
+print("#######################################")
+#desempaquetat solo algunos usando astericos 
+(a, b, c, *d) = tupla_frutas
+print(a)
+print(b)
+print(c)
+
+
