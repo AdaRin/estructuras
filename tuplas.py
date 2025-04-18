@@ -98,4 +98,20 @@ print("#######################################")
 for i in range(len(tupla_frutas)):
     print(tupla_frutas[i], "con índice", i)
 
+#JUNTAR, CONTAR E INDICE CON TUPLAS
+print("#################JUNTAR##################")
+tupla_frutas1 = ("Manzana", "Plátano") 
+tupla_frutas2 = ("Cereza", "Manzana","Banana")
 
+tupla_frutas = tupla_frutas1 + tupla_frutas2
+print(tupla_frutas)
+
+print("#################CONTAR##################")
+
+tupla_frutas = tupla_frutas1*3 + tupla_frutas2
+print(tupla_frutas.count("Manzana"))
+
+print("#################CONTAR##################")
+
+tupla_frutas = tupla_frutas1*3 + tupla_frutas2
+print(tupla_frutas1.index("Manzana"))
