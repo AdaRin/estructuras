@@ -67,7 +67,7 @@ del tupla_frutas
 """
 
 #DESEMPAQUETANDO TUPLAS
-
+"""
 tupla_frutas = ("Manzana", "Plátano", "Cereza", "Manzana","Banana")
 (a, b, c, d, e) = tupla_frutas
 
@@ -83,5 +83,19 @@ print("#######################################")
 print(a)
 print(b)
 print(c)
+"""
+
+#BUCLES CON TUPLAS
+tupla_frutas = ("Manzana", "Plátano", "Cereza", "Manzana","Banana")
+
+#La forma más básica
+for fruta in tupla_frutas:
+    print(fruta)
+
+#Usando range
+print("#######################################")
+
+for i in range(len(tupla_frutas)):
+    print(tupla_frutas[i], "con índice", i)
 
 
