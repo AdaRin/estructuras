@@ -56,3 +56,5 @@ print(set_tecno_chicago)
 
 set_tecno_chicago.difference_update(set_tecno_ny)
 print(set_tecno_chicago)
+
+
