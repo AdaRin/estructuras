@@ -87,5 +87,38 @@ valor = diccionario.get("nombre", "No encontrado") # Devuelve "No encontrado" si
 print(valor) # Imprime el valor asociado a la clave "nombre" o "No encontrado" si no existe 
 
 
+#Diccionarios anidados
+# Un diccionario anidado es un diccionario que contiene otros diccionarios como valores.    
+# Esto permite crear estructuras de datos más complejas y jerárquicas.
+# Los diccionarios anidados son útiles para representar datos estructurados, como registros de bases de datos o configuraciones complejas.
+# Se pueden acceder a los elementos de un diccionario anidado utilizando múltiples claves.
+# Se utiliza la notación de corchetes para acceder a los elementos internos.
+diccionario_anidado = {
+    "persona": {
+        "nombre": "Juan",
+        "apellido": "Pérez",
+        "edad": 30
+    },
+    "direccion": {
+        "calle": "Calle Principal",
+        "ciudad": "Ciudad Ejemplo"
+    },
+    "tecnologias": {
+        "lenguajes": ["Python", "Java", "C++"],
+        "frameworks": ["Django", "Flask"]
+    }               
+}
+# Acceder a un valor en un diccionario anidado  
+print(diccionario_anidado["persona"]["nombre"]) # Imprime "Juan"
+print(diccionario_anidado["direccion"]["ciudad"]) # Imprime "Ciudad Ejemplo"  
+print(diccionario_anidado["tecnologias"]["lenguajes"][0]) # Imprime "Python"
+print(diccionario_anidado["tecnologias"]["frameworks"][1]) # Imprime "Flask"      
+#For loop en diccionarios anidados
+for persona, datos in diccionario_anidado.items():
+    print(f"{persona}:")
+    for clave, valor in datos.items():
+        print(f"  {clave}: {valor}") # Imprime cada clave y su valor asociado en el diccionario anidado 
+
+
 
 
